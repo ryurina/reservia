@@ -1,0 +1,541 @@
+/* Author: https://github.com/ryurina
+ * #0065fc
+ * rgba(0,101,252,255)
+ * #0355D0
+ * #09090B
+ * */
+@font-face {
+  font-family: 'raleway';
+  src: url('fonts/raleway.regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('fonts/raleway.bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'raleway', sans-serif;
+  color: #09090B;
+}
+
+
+/* Version Mobile */
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 100px;
+}
+
+header a {
+  font-style: none;
+  text-decoration: none;
+  color: #0065fc;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #0355d0;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #09090B;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-bottom: 3px solid #0065fc;
+}
+
+nav .active {
+  color: #0065fc;
+  border-bottom: 3px solid #0065fc;
+}
+
+.hero {
+  padding: 10px 20px;
+}
+
+.hero h3 {
+  font-family: 'raleway-bold';
+}
+
+.recherche {
+  padding: 10px 10px;
+}
+
+.recherche-form {
+  width: 100%;
+}
+
+.recherche-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bar-recherche {
+  width: 100%;
+  padding: 12px 50px 12px 40px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.bar-recherche:focus {
+  border-color: #0065fc;
+}
+
+.icon-position {
+  position: absolute;
+  left: 15px;
+  color: #777;
+  pointer-events: none;
+  background-color: gainsboro;
+}
+
+.btn-recherche {
+  position: absolute;
+  right: 5px;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-recherche:hover {
+  background-color: #0355d0;
+}
+
+
+footer {
+  background-color: #ecf0f1;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-lien {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-lien a {
+  color: #09090B;
+  text-decoration: none;
+}
+
+.footer-lien a:hover {
+  color: #0065fc;
+}
+
+.section-filtre {
+  padding: 20px 15px;
+}
+
+.btn-filtre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #deebff;
+  border-radius: 25px;
+  padding: 8px 16px 8px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 150px;
+}
+
+.btn-icon-filtre {
+  position: absolute;
+  color: #0065fc;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #deebff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.type-filtre {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section-populaire {
+  background-color: #ecf0f1;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titre-populaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre-populaire span {
+  font-family: 'raleway-bold';
+}
+
+.populaires-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pop-card {
+  background-color: #fff;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #7f8c8d;
+  cursor: pointer;
+}
+
+.pop-card:hover {
+  box-shadow: 2px 2px 4px #0355d0;
+}
+
+.pop-card img {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.pop-card .info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pop-card .info p {
+  font-size: 13px;
+}
+
+.etoiles {
+  color: #0065fc;
+}
+
+.section-hebergements {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.section-hebergements h3 {
+  font-family: 'raleway-bold';
+}
+
+.heb-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heb-card {
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #7f8c8d;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.heb-card:hover {
+  box-shadow: 2px 2px 4px #0355d0;
+}
+
+.heb-card img {
+  width: 100%;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.heb-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 5px 7px;
+}
+
+.heb-card .info p {
+  font-size: 13px;
+}
+
+.afficher-plus {
+  text-decoration: none;
+  color: #09090b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.afficher-plus:hover {
+  color: #0065fc;
+}
+
+.section-activite {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.section-activite h3 {
+  font-family: 'raleway-bold';
+}
+
+.act-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.act-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #7f8c8d;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.act-card:hover {
+  box-shadow: 2px 2px 4px #0355d0;
+}
+
+.act-card img {
+  width: 100%;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.act-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 15px 17px;
+}
+
+/* Version Mobile */
+
+
+
+/* Version Desktop */
+
+@media (min-width: 768px) {
+  header {
+    padding: 0 5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+
+  header img {
+    margin-top: 20px;
+  }
+
+  .nav-desktop a {
+    color: #09090B;
+    padding-top: 25px;
+  }
+
+  .nav-desktop a:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+  }
+
+  .nav-desktop .active {
+    color: #0065fc;
+    border-top: 3px solid#0065fc;
+  }
+
+  .contenu {
+    padding: 0 4%;
+  }
+
+  .recherche-form {
+    width: 20%;
+  }
+
+
+
+  .sec-pop-heb {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+  }
+
+  .section-populaire {
+    order: 2;
+    border-radius: 25px;
+    padding: 7%;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .pop-card img {
+    width: 175px;
+    height: 150px;
+  }
+
+  .section-hebergements {
+    order: 1;
+    border-radius: 25px;
+    padding: 3%;
+    background-color: #ecf0f1;
+    display: grid;
+  }
+
+  .filtre-desktop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .heb-cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .act-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "elem1 elem2 elem4 elem5"
+      "elem1 elem3 elem4 elem6";
+    gap: 50px;
+    padding: 2%;
+  }
+
+  .act-1 {
+    grid-area: elem1;
+  }
+
+  .act-1 img {
+    height: 400px;
+  }
+
+  .act-2 {
+    grid-area: elem2;
+  }
+
+  .act-3 {
+    grid-area: elem3;
+  }
+
+  .act-4 {
+    grid-area: elem4;
+  }
+
+  .act-4 img {
+    height: 400px;
+  }
+
+  .act-5 {
+    grid-area: elem5;
+  }
+
+  .act-6 {
+    grid-area: elem6;
+  }
+
+  footer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* Version Desktop */

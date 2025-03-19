@@ -1,8 +1,9 @@
 /* Author: https://github.com/ryurina
- * #0065fc
- * rgba(0,101,252,255)
- * #0355D0
- * #09090B
+ * Couleur: 
+ *  - #0065fc
+ *  - rgba(0,101,252,255)
+ *  - #0355D0
+ *  - #09090B
  * */
 @font-face {
   font-family: 'raleway';
@@ -260,6 +261,7 @@ footer {
   padding: 5px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  object-fit: cover;
 }
 
 .pop-card .info {
@@ -316,6 +318,7 @@ footer {
   height: 150px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 
 .heb-card .info {
@@ -378,6 +381,7 @@ footer {
   height: 150px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 
 .act-card .info {

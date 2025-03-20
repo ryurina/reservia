@@ -419,6 +419,12 @@ footer {
 /* Version Desktop */
 
 @media (min-width: 768px) {
+
+  header,
+  .contenu {
+    margin: 0% 2%;
+  }
+
   header {
     padding: 0 5%;
   }

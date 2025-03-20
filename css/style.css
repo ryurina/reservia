@@ -109,10 +109,11 @@ nav .active {
 
 .bar-recherche {
   width: 100%;
-  padding: 12px 50px 12px 40px;
+  font-family: 'raleway-bold';
+  padding: 10px 57px;
   font-size: 16px;
   border: 2px solid #ddd;
-  border-radius: 25px;
+  border-radius: 15px;
   outline: none;
   transition: border-color 0.3s;
 }
@@ -122,21 +123,25 @@ nav .active {
 }
 
 .icon-position {
+  font-size: 25px;
   position: absolute;
-  left: 15px;
+  left: 0px;
+  padding: 5px 15px;
   color: #777;
   pointer-events: none;
   background-color: gainsboro;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .btn-recherche {
   position: absolute;
-  right: 5px;
+  right: 0px;
   background-color: #0065fc;
   color: white;
   border: none;
   padding: 8px 15px;
-  border-radius: 25px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

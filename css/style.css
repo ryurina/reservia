@@ -85,6 +85,11 @@ nav .active {
   border-bottom: 3px solid #0065fc;
 }
 
+.inscription {
+  padding-top: 25px;
+  color: #0065fc;
+}
+
 .hero {
   padding: 10px 20px;
 }
@@ -408,7 +413,7 @@ footer {
   padding: 15px 17px;
 }
 
-.act-card .titre {
+.titre h4 {
   font-family: 'raleway-bold';
 }
 
@@ -435,6 +440,18 @@ footer {
 
   .desktop-menu {
     display: block;
+    color: #09090B;
+    padding-top: 25px;
+  }
+
+  .desktop-menu:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+  }
+
+  .nav-desktop .active {
+    color: #0065fc;
+    border-top: 3px solid#0065fc;
   }
 
   .nav-desktop {
@@ -447,21 +464,6 @@ footer {
 
   header img {
     margin-top: 20px;
-  }
-
-  .nav-desktop a {
-    color: #09090B;
-    padding-top: 25px;
-  }
-
-  .nav-desktop a:hover {
-    color: #0065fc;
-    border-top: 3px solid #0065fc;
-  }
-
-  .nav-desktop .active {
-    color: #0065fc;
-    border-top: 3px solid#0065fc;
   }
 
   .contenu {

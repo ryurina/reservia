@@ -23,14 +23,14 @@
 
     </div>
     <div class="nav-desktop">
-      <a href="#" class="desktop-menu active">Hébergements</a>
-      <a href="#" class="desktop-menu">Activités</a>
+      <a href="#hebergements" class="desktop-menu active">Hébergements</a>
+      <a href="#activites" class="desktop-menu">Activités</a>
       <a href="#">S'inscrire</a>
     </div>
   </header>
   <nav>
-    <a href="#" class="active">Hébergements</a>
-    <a href="#">Activités</a>
+    <a href="#hebergements" class="active">Hébergements</a>
+    <a href="#activites">Activités</a>
   </nav>
 
   <!-- En tête -->
@@ -50,12 +50,8 @@
           </div>
           <input type="text" class="bar-recherche" placeholder="Marseille, France" name="recherche">
           <button type="submit" class="btn-recherche">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-
+            <i class="fa fa-search"></i>
+            <p>Rechercher</p>
           </button>
         </div>
       </form>
@@ -98,7 +94,7 @@
     </section>
     <br><br>
     <div class="sec-pop-heb">
-      <section class="section-populaire">
+      <section id="populaire" class="section-populaire">
         <h3 class="titre-populaire">
           <span>Les plus populaires</span>
           <i class="fa fa-line-chart"></i>
@@ -157,7 +153,7 @@
         </div>
       </section>
 
-      <section class="section-hebergements">
+      <section id="hebergements" class="section-hebergements">
         <h3>Hébergements à Marseille</h3>
         <div class="heb-cards">
           <div class="heb-card">
@@ -267,7 +263,7 @@
       </section>
     </div>
     <br>
-    <section class="section-activite">
+    <section id="activites" class="section-activite">
       <h3>Activités à Marseille</h3>
       <div class="act-cards">
         <div class="act-card act-1">

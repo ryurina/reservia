@@ -150,6 +150,15 @@ nav .active {
   background-color: #0355d0;
 }
 
+.btn-recherche i {
+  font-size: 20px;
+}
+
+.btn-recherche p {
+  font-size: 20px;
+  display: none;
+}
+
 
 footer {
   background-color: #ecf0f1;
@@ -163,6 +172,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer-section h3 {
+  font-family: 'raleway-bold';
 }
 
 .footer-lien {
@@ -341,7 +354,7 @@ footer {
   text-decoration: none;
   color: #09090b;
   font-size: 20px;
-  font-weight: bold;
+  font-family: 'raleway-bold';
 }
 
 .afficher-plus:hover {
@@ -396,6 +409,10 @@ footer {
   padding: 15px 17px;
 }
 
+.act-card .titre {
+  font-family: 'raleway-bold';
+}
+
 /* Version Mobile */
 
 
@@ -447,7 +464,16 @@ footer {
   }
 
   .recherche-form {
-    width: 20%;
+    width: 400px;
+  }
+
+  .btn-recherche i {
+    display: none;
+  }
+
+  .btn-recherche p {
+    font-size: 17px;
+    display: block;
   }
 
 
@@ -472,8 +498,9 @@ footer {
   }
 
   .pop-card img {
-    width: 175px;
+    width: 110px;
     height: 150px;
+    object-fit: cover;
   }
 
   .section-hebergements {
